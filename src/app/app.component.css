@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.parrafo{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.P-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen-portafolio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .marca-de-agua {
+    position: static; /* Cambia a position: static para que no afecte el posicionamiento */
+    opacity: 0.5; /* Ajusta la opacidad según tu preferencia */
+    /* Puedes eliminar el margin ya que no es necesario */
+  }
+ 
+.Texto{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.P-Desarrollador{
+    line-height: 1.5;
+}
+.animate{
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-direction: normal;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
+   
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.Photo{
+    width: 160px;
+    height: auto;
+    border-radius: 6rem;
+}
+.photo-imagen{
+    display: flex;
+    justify-content: center;
+}
+.br-sepa{
+    margin: 10px auto; /* Ajusta el margen superior e inferior y establece el margen izquierdo y derecho como "auto" */
+    border-top: 5px solid rgb(3, 3, 3);
+    border-radius: 2rem;
+    width: 80%;
+    display: block;
+}
+.P-Logo{
+    display: flex;
+    justify-content: center;
+}
+.container-sing{
+    display: flex;
+    justify-content: space-between;
+}
+.container-sing button {
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+.logo-Profile{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.row {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Alinea los elementos horizontalmente en el centro */
+}
+
+.p-SobreMi {
+    width: 100%;
+    margin-top: 800px; /* Ajusta el margen superior según tu preferencia */
+}
+.p-Experiencia{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.parrafo-sobre {
+    text-align: justify;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.card {
+    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.305);
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+}
+.Tecnologias{
+    display: flex;
+    justify-content: center;
+}
+
+/* .p-SobreMi{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 0;
+}
+.parrafo-sobre{
+    text-align: justify;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+.card {
+    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.305); 
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+}
+.card-body{
+    text-align: center;
+}
+
+.p-Experiencia{
+   
+} */
