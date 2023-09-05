@@ -102,6 +102,10 @@ html, body {
     justify-content: space-around;
     
 }
+h6{
+    font-size: medium;
+    font-weight: 700;
+}
 .row {
     display: flex;
     flex-direction: column; /* Alinea los elementos en columna */
@@ -110,7 +114,7 @@ html, body {
 
 .p-SobreMi {
     width: 100%;
-    margin-top: 800px; /* Ajusta el margen superior según tu preferencia */
+    margin-top: 2650px; /* Ajusta el margen superior según tu preferencia */
 }
 .p-Experiencia{
     width: 100%;
@@ -144,6 +148,24 @@ html, body {
     display: flex;
     justify-content: center;
 }
+.proyect-Card{
+    height: 80%;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+.card-text{
+    text-align: justify;
+}
+.image-container {
+    width: 300px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.image-container:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
 
 /* .p-SobreMi{
     display: flex;
