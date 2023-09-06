@@ -23,6 +23,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+   
   }
   
   .imagen-portafolio {
@@ -85,17 +86,25 @@ html, body {
     width: 80%;
     display: block;
 }
+
+@media (max-width: 425px){
+    .br-sepa{
+      text-align: center;
+    }
+}
 .P-Logo{
     display: flex;
     justify-content: center;
 }
 .container-sing{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between; 
 }
-.container-sing button {
-    margin-right: 10px; /* Espacio entre botones */
+.buttons {
+    margin-right: 20px; 
 }
+
 
 .logo-Profile{
     display: flex;
@@ -109,13 +118,28 @@ h6{
 .row {
     display: flex;
     flex-direction: column; /* Alinea los elementos en columna */
-    align-items: center; /* Alinea los elementos horizontalmente en el centro */
+    align-items: center;
+    margin-top: auto; /* Alinea los elementos horizontalmente en el centro */
 }
 
 .p-SobreMi {
     width: 100%;
-    margin-top: 2650px; /* Ajusta el margen superior según tu preferencia */
+    margin-top: 450px; 
 }
+
+@media (max-width: 425px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      margin-top: auto; /* Alinea los elementos en el centro con un margen más pequeño */
+    }
+  
+    .p-SobreMi {
+      width: 100%;
+      margin-top: 420px; /* Reduce el margen en dispositivos móviles */
+    }
+  }
+
 .p-Experiencia{
     width: 100%;
     margin-top: 10px;
@@ -130,9 +154,15 @@ h6{
 
 .card {
     width: 30rem;
-    background-color: rgba(255, 255, 255, 0.305);
+    background-color: #fff7f7bd;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 425px){
+    .card{
+        width: 25rem;
+    }
 }
 
 .card-body {
@@ -144,6 +174,12 @@ h6{
    height: 40px;
    margin-right: 10px;
 }
+@media (max-width: 425px){
+    .card-img-top{
+        width: 35px;
+    }
+}
+
 .Tecnologias{
     display: flex;
     justify-content: center;
@@ -157,38 +193,46 @@ h6{
 .card-text{
     text-align: justify;
 }
+
 .image-container {
-    width: 300px;
+    width: 500px;
     transition: transform 0.2s;
     cursor: pointer;
+}
+
+@media (max-width: 425px){
+    .image-container{
+        width: 400px;
+    }
+    .image-container:hover{
+        transform: scale(1.1) ;
+    }
+
 }
 .image-container:hover img {
     transform: scale(1.2); /* Aumenta el tamaño al 120% */
 }
 
+.footer-portafolio {
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
-/* .p-SobreMi{
+.container-Conct{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     width: 50%;
-    margin-top: 0;
+    margin-left: 120px;    
 }
-.parrafo-sobre{
-    text-align: justify;
-    font-weight: 600;
-    font-size: 0.8rem;
-    line-height: 1.5;
+@media (max-width: 425px){
+    .container-Conct{
+        margin-left: 100px;
+    }
 }
-.card {
-    width: 30rem;
-    background-color: rgba(255, 255, 255, 0.305); 
-    border: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-}
-.card-body{
+.marca{
     text-align: center;
 }
-
-.p-Experiencia{
-   
-} */
