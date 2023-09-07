@@ -56,14 +56,14 @@ html, body {
     font-size: 2rem;
     margin: 0 auto;
     border-right: 0.15em solid #ebeced;
-    animation: typing 5s steps(30) 1s 1 normal both, blink 1s steps(1) infinite;  
+    animation: typing 6s steps(20) 1s 1 normal both, blink 1s steps(1) infinite;  
 }
 @keyframes typing {
     from {
       width: 0;
     }
     to {
-      width: 100%;
+      width: 40%;
     }
   }
   @keyframes blink {
@@ -73,11 +73,11 @@ html, body {
  }
  @media (max-width: 767px) {
     .Hola {
-      font-size: 1.5rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+      font-size: 1.5rem; 
     }
   
     .animate {
-      font-size: 1rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+      font-size: 1rem;
     }
  }
 
