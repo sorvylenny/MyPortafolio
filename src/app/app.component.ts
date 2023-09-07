@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import {  Portafolio } from './interface';
 
 @Component({
@@ -6,19 +6,19 @@ import {  Portafolio } from './interface';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'MyPortafolio';
-
+  
   list_Experiencias : Portafolio[]=[ 
-    {title:'Experiencias', text1:'Asistente de base de datos',text2:'Mayo 2022 - noviembre 2022',text3:'Trasladar del fisico al digital a una base de datos,  trazar las rutas dónde estaban los predios . para que quedarán bien registradas y Como Contrato era obra labor, se acabaron los registros y iban hacer una aplicación    para facilitarle al perito el trabajo'},
-    {text1:'Representante de servicio al cliente',text2:'2020-2022',text3:'Contestar llamadas para resolver las necesidades del cliente. inconveniente , duda. documentos, asesoría de algún prcxiuto e asesoria de la página web del banco. Venta de los productos del banco. un asesor comercial.'}
+    {title:'Experiencias', text1:'Asistente de base de datos',text2:'Mayo 2022 - Noviembre 2022',text3:'Trasladar del fisico al digital a una base de datos unos documentos de la empresa de los cuales eran predios, se trazaban las rutas para que quedarán bien registrados y estaba en proyecto realizar una app para facilitarle al perito el trabajo.'},
+    {text1:'Representante de servicio al cliente',text2:'Mayo 2020 - Mayo 2022',text3:'Contestar llamadas para resolver las necesidades del cliente, inconveniente , duda, documentos, asesoría de algún producto e asesoria de la página web del banco, Venta de los productos del banco, un asesor comercial.'}
  ];
 
  list_Proyectos: Portafolio[]=[
-  {title:'Proyectos', image:'assets/appPaises.png', text1:'App-Paises',text2:'Aplicación realizada para buscar por paises, region y capital, fue mi primera applicación.',text3:'Observación: Aplicación de practica lo que aprendí en el Curso de Angular en Udemy.', link:'https://aplicationpaises.netlify.app/'},
-  {image:'assets/appMaps.png', text1:'App-Maps',text2:'Aplicación es buscar sitios, te muestra tu ubicacion actual, siempre y cuando le permitas acceso.',text3:'Observación: Proyecto de práctica.',link:'https://aplicationmaps.netlify.app/'},
-  {image:'assets/appYugiho.png', text1:'Poryecto Yugiho',text2:'Aplicación que Busca los personajes, tiene una tarjeta aparte y un scroll infinito.',text3:'Observación: Proyecto de práctica.', link:'https://appyugiho.netlify.app/'},
-  {image:'assets/appStore.png', text1:'Proyecto Store',text2:'Aplicación que tiene varios módulos, los cuales son admin, user y el del store, es una minitienda, que basicamente puedes ver productos, comprar, registrate, solo el modulo admin puede ingresar productos y usuarios.',text3:'Observación: Proyecto de personal para ver mis capacidades, esta todavia en proceso. Nota: El backend lo realizo Eleazar Gamez.', link:'https://github.com/sorvylenny/tubodegaapp' },
+  {title:'Proyectos', image:'assets/appPaises.png', text1:'App-Paises',text2:'Aplicación realizada para buscar por paises, region y capital, fue mi primera aplicación.',text3:'Observación: Aplicación de práctica lo que aprendí en el Curso de Angular en Udemy.', link:'https://aplicationpaises.netlify.app/'},
+  {image:'assets/appMaps.png', text1:'App-Maps',text2:'Aplicación es buscar sitios, te muestra tu ubicación actual, siempre y cuando le permitas acceso.',text3:'Observación: Proyecto de práctica.',link:'https://aplicationmaps.netlify.app/'},
+  {image:'assets/appYugiho.png', text1:'Poryecto Yugiho',text2:'Aplicación que Busca los personajes, tiene una tarjeta y un scroll infinito.',text3:'Observación: Proyecto de práctica.', link:'https://appyugiho.netlify.app/'},
+  {image:'assets/appStore.png', text1:'Proyecto Store',text2:'Aplicación que tiene varios módulos, los cuáles son admin, user y el del store, es una minitienda, que básicamente puedes ver productos, comprar, registrate, solo el modulo admin puede ingresar productos y usuarios.',text3:'Observación: Proyecto de personal para ver mis capacidades, esta todavia en proceso. Nota: El backend lo realizo Eleazar Gamez.', link:'https://github.com/sorvylenny/tubodegaapp' },
 ];
  list_Icon: Portafolio[]=[
   {link:'https://www.linkedin.com/in/katherine-flores-marin/', text1:'bi bi-linkedin', text2:'M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z' },

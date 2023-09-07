@@ -1,130 +1,125 @@
-<div class="container">
-  <h1 class="parrafo">Mi Portafolio</h1>
-  <div class="Texto">
-    <span class="animate"> Hola soy Katherine Flores </span>
-    <h4 class="P-Desarrollador">Desarrollador Forntend</h4>
-  </div>
 
-  <div class="photo-imagen">
-    <img [src]="'assets/photoKathe.jpg'" class="Photo" alt="Foto de Kathe" />
-  </div>
-  <div class="Texto">
-    <h5>1 año y 8 meses de experiencia</h5>
-    <div class="br-sepa"></div>
-  </div>
+<h1 class="parrafo">Mi Portafolio</h1>
 
-  <div class="P-Logo">
-    <div class="d-flex flex-row container-sing" *ngFor="let item of list_Icon">
-      <a [href]="item.link">
-        <button class="btn btn-dark buttons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            [class]="item.text1"
-            viewBox="0 0 16 16"
-          >
-            <path [attr.d]="item.text2"></path>
-            <path [attr.d]="item.text3"></path>
-          </svg>
-        </button>
-      </a>
-    </div>
-  </div>
-  <div class="P-image">
-    <div class="marca-de-agua">
-      <img
-        src="https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1693855279~exp=1693855879~hmac=84f1cb0a0064ed312ffa8ed30988216d8183bdb7acdc3c8797ca34ca89c701d7"
-        class="imagen-portafolio"
-        alt="..."
-      />
-    </div>
-    <div class="row">
-      <div class="p-SobreMi">
-        <div class="card">
-          <h5 class="Texto">Sobre mi</h5>
-          <div class="card-body">
-            <p class="parrafo-sobre">
-              Soy tecnológico (a) en sistemas y cuento con 1 año y 8 meses de
-              experiencia en el desarrollo de software, en distintos lenguajes
-              de programación como en el framework de angular, CSS, html,
-              typescript, JavaScript. He trabajado en proyectos personales para
-              seguir aprendiendo y me encanta resolver problemas y encontrar
-              soluciones.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="p-Experiencia">
-        <div class="card" *ngFor="let item of list_Experiencias">
-          <h5 class="Texto">{{ item.title }}</h5>
-          <div class="card-body">
-            <h6>{{ item.text1 }}</h6>
-            <h6>{{ item.text2 }}</h6>
-            <p class="parrafo-sobre">{{ item.text3 }}</p>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div *ngFor="let item of list_Proyectos">
-        <div class="card" style="margin-top: 10px">
-          <h5 class="Texto">{{ item.title }}</h5>
-          <div class="image-container">
-            <img [src]="item.image" class="proyect-Card" alt="..." />
-          </div>
-          <br />
-          <div class="card-body">
-            <h5 class="card-title">{{ item.text1 }}</h5>
-            <p class="card-text">
-              {{ item.text2 }}<strong> {{ item.text3 }}</strong>
-            </p>
-            <a [href]="item.link" class="btn btn-primary">Ver App</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="Tecnologias">
-        <div class="card" style="margin-top: 10px">
-          <h5 class="Texto">{{ list_Tecnologias[0].title }}</h5>
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <ng-container *ngFor="let item of list_Tecnologias.slice(1)">
-                <img [src]="item.link" class="card-img-top" alt="..." />
-              </ng-container>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="P-Logo">
-        <div class="card" style="margin-top: 10px">
-          <h5 class="Texto">Contacto</h5>
-          <div class="card-body">
-            <div class="container-Conct">
-              <div class="d-flex flex-row" *ngFor="let item of list_Icon">
-                <a [href]="item.link">
-                  <button class="btn btn-dark buttons">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      [class]="item.text1"
-                      viewBox="0 0 16 16"
-                    >
-                      <path [attr.d]="item.text2"></path>
-                      <path [attr.d]="item.text3"></path>
-                    </svg>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-       <div class="marca">
-        <h6> © 2023 Copyright: Realizado por Katherine Flores</h6>
-       </div>
-    </div>
+<div class="Hola">
+  <p class="animate"> Hola mi nombre es Katherine Flores </p>
 </div>
+<div class="Texto">
+  <h3 class="P-Desarrollador">Desarrollador Forntend</h3>
+</div>
+
+<div class="photo-imagen">
+  <img [src]="'assets/photoKathe.jpg'" class="Photo" alt="Foto de Kathe" />
+</div>
+<div class="Contenedor-text">
+  <strong> 1 año y 8 meses de experiencia</strong>
+  <div class="br-sepa"></div>
+</div>
+
+<div class="P-Logo">
+  <div class="d-flex flex-row container-sing" *ngFor="let item of list_Icon">
+    <a [href]="item.link">
+      <button class="btn btn-dark buttons">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          [class]="item.text1"
+          viewBox="0 0 16 16">
+          <path [attr.d]="item.text2"></path>
+          <path [attr.d]="item.text3"></path>
+        </svg>
+      </button>
+    </a>
+  </div>
+</div>
+<div class="P-image">
+  <div class="row">
+    <div class="p-SobreMi">
+      <div class="card">
+        <h5 class="Texto">Sobre mi</h5>
+        <div class="card-body">
+          <p class="parrafo-sobre">
+            Soy tecnológico (a) en sistemas y cuento con 1 año y 8 meses de
+            experiencia en el desarrollo de software, en distintos lenguajes
+            de programación como en el framework de angular, CSS, html,
+            typescript, JavaScript, nodeJS, bootstrap, angular material. He
+            trabajado en proyectos personales para
+            seguir aprendiendo y me encanta resolver problemas y encontrar
+            soluciones.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-Experiencia">
+      <div class="card" style="margin-top: 10px"
+        *ngFor="let item of list_Experiencias">
+        <h5 class="Texto">{{ item.title }}</h5>
+        <div class="card-body">
+          <h6>{{ item.text1 }}</h6>
+          <h6>{{ item.text2 }}</h6>
+          <p class="parrafo-sobre">{{ item.text3 }}</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div *ngFor="let item of list_Proyectos">
+      <div class="card" style="margin-top: 10px">
+        <h5 class="Texto">{{ item.title }}</h5>
+        <div class="image-container">
+          <img [src]="item.image" class="proyect-Card" alt="..." />
+        </div>
+        <br />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.text1 }}</h5>
+          <p class="card-text">
+            {{ item.text2 }}<strong> {{ item.text3 }}</strong>
+          </p>
+          <a [href]="item.link" class="btn btn-primary">Ver App</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Tecnologias">
+      <div class="card" style="margin-top: 10px">
+        <h5 class="Texto">{{ list_Tecnologias[0].title }}</h5>
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <ng-container *ngFor="let item of list_Tecnologias.slice(1)">
+              <img [src]="item.link" class="card-img-top" alt="..." />
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="P-Logo">
+      <div class="card" style="margin-top: 10px">
+        <h5 class="Texto">Contacto</h5>
+        <div class="card-body">
+          <div class="container-Conct">
+            <div class="d-flex flex-row" *ngFor="let item of list_Icon">
+              <a [href]="item.link">
+                <button class="btn btn-dark buttons">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    [class]="item.text1"
+                    viewBox="0 0 16 16">
+                    <path [attr.d]="item.text2"></path>
+                    <path [attr.d]="item.text3"></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="marca">
+      <h6> © 2023 Copyright: Realizado por Katherine Flores</h6>
+    </div>
+  </div>

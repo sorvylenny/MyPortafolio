@@ -12,7 +12,6 @@ html, body {
     line-height: 1.5;
     margin-top: 20px;
 }
-
 .P-image {
     position: absolute;
     top: 0;
@@ -22,25 +21,14 @@ html, body {
     z-index: -1;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
-  }
+    align-items: center;   
+}
   
-  .imagen-portafolio {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .marca-de-agua {
-    position: static; /* Cambia a position: static para que no afecte el posicionamiento */
-    opacity: 0.5; /* Ajusta la opacidad según tu preferencia */
-    /* Puedes eliminar el margin ya que no es necesario */
-  }
+.Contenedor-text {
+    text-align: center;
+    font-weight: 600;
+    color:#0f0f10
+}
  
 .Texto{
     text-align: center;
@@ -51,27 +39,49 @@ html, body {
 .P-Desarrollador{
     line-height: 1.5;
 }
-.animate{
-    animation-duration: 2s;
-    animation-name: slidein;
-    animation-direction: normal;
-    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1);
-   
+.Hola{
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  place-items: center;
+  height: 5vh;
+  text-align: center;
+
 }
-@keyframes slidein {
+.animate{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    border-right: 0.15em solid #ebeced;
+    animation: typing 5s steps(30) 1s 1 normal both, blink 1s steps(1) infinite;  
+}
+@keyframes typing {
     from {
-      margin-left: 100%;
-      width: 300%;
+      width: 0;
     }
-  
     to {
-      margin-left: 0%;
       width: 100%;
     }
-}
+  }
+  @keyframes blink {
+    20% {
+      border-color: transparent;
+    }
+ }
+ @media (max-width: 767px) {
+    .Hola {
+      font-size: 1.5rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+  
+    .animate {
+      font-size: 1rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+ }
 
 .Photo{
-    width: 160px;
+    width: 200px;
     height: auto;
     border-radius: 6rem;
 }
@@ -86,7 +96,6 @@ html, body {
     width: 80%;
     display: block;
 }
-
 @media (max-width: 425px){
     .br-sepa{
       text-align: center;
@@ -104,45 +113,35 @@ html, body {
 .buttons {
     margin-right: 20px; 
 }
-
-
-.logo-Profile{
-    display: flex;
-    justify-content: space-around;
-    
-}
 h6{
     font-size: medium;
     font-weight: 700;
 }
 .row {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en columna */
+    flex-direction: column; 
     align-items: center;
-    margin-top: auto; /* Alinea los elementos horizontalmente en el centro */
+    margin-top: auto; 
 }
-
 .p-SobreMi {
     width: 100%;
-    margin-top: 450px; 
+    margin-top: 495px;   
 }
-
 @media (max-width: 425px) {
     .row {
       flex-direction: column;
       align-items: center;
-      margin-top: auto; /* Alinea los elementos en el centro con un margen más pequeño */
+      margin-top: auto; 
     }
   
     .p-SobreMi {
       width: 100%;
-      margin-top: 420px; /* Reduce el margen en dispositivos móviles */
+      margin-top: 455px; 
     }
   }
 
 .p-Experiencia{
     width: 100%;
-    margin-top: 10px;
 }
 
 .parrafo-sobre {
@@ -151,14 +150,12 @@ h6{
     font-size: 0.8rem;
     line-height: 1.5;
 }
-
 .card {
     width: 30rem;
-    background-color: #fff7f7bd;
+    background-color: rgba(255, 247, 247, 0.672);
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-
 @media (max-width: 425px){
     .card{
         width: 25rem;
@@ -174,6 +171,11 @@ h6{
    height: 40px;
    margin-right: 10px;
 }
+.card-img-top:hover {
+    opacity: 0.9; 
+    transform: scale(1.1); 
+ 
+  }
 @media (max-width: 425px){
     .card-img-top{
         width: 35px;
@@ -199,7 +201,9 @@ h6{
     transition: transform 0.2s;
     cursor: pointer;
 }
-
+.image-container:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
 @media (max-width: 425px){
     .image-container{
         width: 400px;
@@ -209,18 +213,6 @@ h6{
     }
 
 }
-.image-container:hover img {
-    transform: scale(1.2); /* Aumenta el tamaño al 120% */
-}
-
-.footer-portafolio {
-    width: 100%;
-    height: 81px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 .container-Conct{
     display: flex;
     flex-direction: row;

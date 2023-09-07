@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* Imagen de la Url https://acerkate.com/diferencias-entre-diseno-web-y-desarrollo-web/ */
+body{
+    background-color: #ccd1ec;
+    background-image: url(https://acerkate.com/wp-content/uploads/2021/05/desarrollo-web-980x737.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+@media (max-width: 767px) {
+    body {
+      background-color: #f0f0f0; /* Cambia el color de fondo para dispositivos móviles */
+      background-image: url(https://acerkate.com/wp-content/uploads/2021/05/desarrollo-web-980x737.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+  
+      /* Ajusta el tamaño de la imagen de fondo en dispositivos móviles */
+      background-size: contain; /* Otras opciones: cover, auto, etc. */
+    }
+  }
