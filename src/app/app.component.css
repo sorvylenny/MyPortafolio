@@ -27,7 +27,8 @@ html, body {
 .Contenedor-text {
     text-align: center;
     font-weight: 600;
-    color:#ffca56;
+    color:rgb(168, 14, 224,100%);
+    margin-top:10px;
 }
  
 .Texto{
@@ -125,7 +126,7 @@ h6{
 }
 .p-SobreMi {
     width: 100%;
-    margin-top: 495px;   
+    margin-top: 515px;   
 }
 @media (max-width: 425px) {
     .row {
@@ -136,7 +137,7 @@ h6{
   
     .p-SobreMi {
       width: 100%;
-      margin-top: 455px; 
+      margin-top: 470px; 
     }
   }
 
@@ -172,8 +173,9 @@ h6{
    margin-right: 10px;
 }
 .card-img-top:hover {
+    transition-duration: 5ms;
     opacity: 0.9; 
-    transform: scale(1.1); 
+    transform: scale(1.2); 
  
   }
 @media (max-width: 425px){
@@ -202,7 +204,9 @@ h6{
     cursor: pointer;
 }
 .image-container:hover img {
-    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+    transition-duration: 1.5s;
+    transform: scale(1.2); 
+    opacity: 0.9; 
 }
 @media (max-width: 425px){
     .image-container{
