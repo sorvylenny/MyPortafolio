@@ -56,14 +56,14 @@ html, body {
     font-size: 2rem;
     margin: 0 auto;
     border-right: 0.15em solid #ebeced;
-    animation: typing 6s steps(20) 1s 1 normal both, blink 1s steps(1) infinite;  
+    animation: typing 5s steps(20) 1s 1 normal both, blink 1s steps(1) infinite;  
 }
 @keyframes typing {
     from {
       width: 0;
     }
     to {
-      width: 40%;
+      width: 41%;
     }
   }
   @keyframes blink {
@@ -78,6 +78,7 @@ html, body {
   
     .animate {
       font-size: 1rem;
+      width: 100%;
     }
  }
 
@@ -90,6 +91,12 @@ html, body {
     display: flex;
     justify-content: center;
 }
+@media (max-width: 425px){
+    .Photo{
+        width: 150px;
+    }
+}
+
 .br-sepa{
     margin: 10px auto; /* Ajusta el margen superior e inferior y establece el margen izquierdo y derecho como "auto" */
     border-top: 5px solid rgb(3, 3, 3);
@@ -126,7 +133,7 @@ h6{
 }
 .p-SobreMi {
     width: 100%;
-    margin-top: 515px;   
+    margin-top: 500px;   
 }
 @media (max-width: 425px) {
     .row {
@@ -137,7 +144,7 @@ h6{
   
     .p-SobreMi {
       width: 100%;
-      margin-top: 470px; 
+      margin-top: 440px; 
     }
   }
 
