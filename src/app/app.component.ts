@@ -17,7 +17,7 @@ export class AppComponent  {
  list_Proyectos: Portafolio[]=[
   {title:'Proyectos', image:'assets/appPaises.png', text1:'App-Paises',text2:'Aplicación realizada para buscar por paises, region y capital, fue mi primera aplicación.',text3:'Observación: Aplicación de práctica lo que aprendí en el Curso de Angular en Udemy.', link:'https://aplicationpaises.netlify.app/'},
   {image:'assets/appMaps.png', text1:'App-Maps',text2:'Aplicación es buscar sitios, te muestra tu ubicación actual, siempre y cuando le permitas acceso.',text3:'Observación: Proyecto de práctica.',link:'https://aplicationmaps.netlify.app/'},
-  {image:'assets/appYugiho.png', text1:'Poryecto Yugiho',text2:'Aplicación que Busca los personajes, tiene una tarjeta y un scroll infinito.',text3:'Observación: Proyecto de práctica.', link:'https://appyugiho.netlify.app/'},
+  {image:'assets/appYugiho.png', text1:'Proyecto Yugiho',text2:'Aplicación que Busca los personajes, tiene una tarjeta y un scroll infinito.',text3:'Observación: Proyecto de práctica.', link:'https://appyugiho.netlify.app/'},
   {image:'assets/appStore.png', text1:'Proyecto Store',text2:'Aplicación que tiene varios módulos, los cuáles son admin, user y el del store, es una minitienda, que básicamente puedes ver productos, comprar, registrate, solo el modulo admin puede ingresar productos y usuarios.',text3:'Observación: Proyecto de personal para ver mis capacidades, esta todavia en proceso. Nota: El backend lo realizo Eleazar Gamez.', link:'https://github.com/sorvylenny/tubodegaapp' },
 ];
  list_Icon: Portafolio[]=[
