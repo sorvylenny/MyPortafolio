@@ -11,6 +11,7 @@ html, body {
     font-size: 2.5rem;
     line-height: 1.5;
     margin-top: 20px;
+    color: blue;
 }
 .P-image {
     position: absolute;
@@ -27,15 +28,25 @@ html, body {
 .Contenedor-text {
     text-align: center;
     font-weight: 600;
-    color:rgb(168, 14, 224,100%);
+    color:#060606;
     margin-top:10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 2rem;
+    width: 90%;
 }
  
 .Texto{
     text-align: center;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 900;
+    font-size: 2rem;
     line-height: 1.5;
+    color: blue;
+}
+@media (max-width: 767px) {
+    .Texto{
+        font-size: 1.5rem;
+    }
 }
 .P-Desarrollador{
     line-height: 1.5;
@@ -43,10 +54,11 @@ html, body {
 .Hola{
   display: flex;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 700;
   place-items: center;
   height: 5vh;
   text-align: center;
+  color: blue;
 
 }
 .animate{
@@ -55,7 +67,7 @@ html, body {
     white-space: nowrap;
     font-size: 2rem;
     margin: 0 auto;
-    border-right: 0.15em solid #ebeced;
+    border-right: 0.15em solid transparent;
     animation: typing 7s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;  
 }
 @keyframes typing {
@@ -63,7 +75,7 @@ html, body {
       width: 0;
     }
     to {
-      width: 68%;
+      width: 80%;
     }
   }
   @keyframes blink {
@@ -73,11 +85,11 @@ html, body {
  }
  @media (max-width: 767px) {
     .Hola {
-      font-size: 1.5rem; 
+      font-size: 1rem; 
     }
   
     .animate {
-      font-size: 1rem;
+      font-size: 0.9rem;
       width: 100%;
     }
  }
@@ -121,6 +133,10 @@ html, body {
 .buttons {
     margin-right: 20px; 
 }
+.containerOne:hover {
+    background-color: #d1074e;
+    transition-duration: 0.3s;
+  }
 h6{
     font-size: medium;
     font-weight: 700;
@@ -133,7 +149,7 @@ h6{
 }
 .p-SobreMi {
     width: 100%;
-    margin-top: 500px;   
+    margin-top: 45vh;   
 }
 @media (max-width: 425px) {
     .row {
@@ -144,10 +160,10 @@ h6{
   
     .p-SobreMi {
       width: 100%;
-      margin-top: 440px; 
+      margin-top: 45vh; 
     }
   }
-  @media (min-width: 1441px) and (max-width: 2650px) {
+  @media (max-width: 768px)  {
     .row {
       flex-direction: column;
       align-items: center;
@@ -156,9 +172,16 @@ h6{
   
     .p-SobreMi {
       width: 100%;
-      margin-top: 520px; 
+      margin-top: 55vh;
     }
   }
+@media (max-width: 1024px) {
+    .p-SobreMi {
+        width: 100%;
+        margin-top: 45vh;
+}
+}
+
 .p-Experiencia{
     width: 100%;
 }
@@ -249,4 +272,5 @@ h6{
 }
 .marca{
     text-align: center;
+    color: blue;
 }

@@ -1,25 +1,24 @@
 
 <h1 class="parrafo">Mi Portafolio</h1>
-
+<br>
 <div class="Hola">
-  <p class="animate"> Hola mi nombre es Katherine Flores </p>
+  <p class="animate"> Katherine Sorvylenny Flores Marín </p>
 </div>
+<br>
 <div class="Texto">
-  <h3 class="P-Desarrollador">Desarrollador Forntend</h3>
+  <p class="P-Desarrollador">Desarrollador Frontend</p>
 </div>
 
 <div class="photo-imagen">
   <img [src]="'assets/photoKathe.jpg'" class="Photo" alt="Foto de Kathe" />
 </div>
-<div class="Contenedor-text">
-  <strong> 1 año y 8 meses de experiencia</strong>
-  <div class="br-sepa"></div>
-</div>
+
+<div class="br-sepa"></div>
 
 <div class="P-Logo">
   <div class="d-flex flex-row container-sing" *ngFor="let item of list_Icon">
     <a [href]="item.link">
-      <button class="btn btn-dark buttons">
+      <button class="btn btn-primary buttons container:hover">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -46,8 +45,8 @@
             de programación como en el framework de angular, CSS, html,
             typescript, JavaScript, nodeJS, bootstrap, angular material. He
             trabajado en proyectos personales para
-            seguir aprendiendo y me encanta resolver problemas y encontrar
-            soluciones.
+            seguir aprendiendo, me encanta resolver problemas y encontrar
+            soluciones, amo bailar, cantar, ver peliculas, series y viajar.
           </p>
         </div>
       </div>
@@ -93,6 +92,7 @@
         </div>
       </div>
     </div>
+
     <div class="P-Logo">
       <div class="card" style="margin-top: 10px">
         <h5 class="Texto">Contacto</h5>
@@ -100,7 +100,7 @@
           <div class="container-Conct">
             <div class="d-flex flex-row" *ngFor="let item of list_Icon">
               <a [href]="item.link">
-                <button class="btn btn-dark buttons">
+                <button class="btn btn-primary buttons">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -122,5 +122,5 @@
     <div class="marca">
       <h6> © 2023 Copyright: Realizado por Katherine Flores</h6>
     </div>
-  </div>  
+  </div>
 </div>

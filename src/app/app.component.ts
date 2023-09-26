@@ -11,7 +11,7 @@ export class AppComponent  {
   
   list_Experiencias : Portafolio[]=[ 
     {title:'Experiencias', text1:'Asistente de base de datos',text2:'Mayo 2022 - Noviembre 2022',text3:'Trasladar del fisico al digital a una base de datos unos documentos de la empresa de los cuales eran predios, se trazaban las rutas para que quedarán bien registrados y estaba en proyecto realizar una app para facilitarle al perito el trabajo.'},
-    {text1:'Representante de servicio al cliente',text2:'Mayo 2020 - Mayo 2022',text3:'Contestar llamadas para resolver las necesidades del cliente, inconveniente , duda, documentos, asesoría de algún producto e asesoria de la página web del banco, Venta de los productos del banco, un asesor comercial.'}
+    {text1:'Representante de servicio al cliente',text2:'Mayo 2020 - Mayo 2022',text3:'Contestar llamadas para resolver las necesidades del cliente, inconveniente , duda, documentos, asesoría de algún producto e asesoria de la página web del banco, Venta de los productos financieros, un asesor comercial.'}
  ];
 
  list_Proyectos: Portafolio[]=[
