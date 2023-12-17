@@ -3,6 +3,7 @@ export interface Portafolio {
     text1?:  string;
     text2?:  string;
     text3?:  string;
-    image?: string;
+    video?: string;
     link?:  string;
+
 }

@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { PortafolioComponent } from './Profile/portafolio/portafolio.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    PortafolioComponent
+    PortafolioComponent,
   ],
   imports: [
     BrowserModule,

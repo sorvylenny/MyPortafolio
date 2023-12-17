@@ -1,19 +1,83 @@
-<div class="container">
-    <h1 class="parrafo">Mi Portafolio</h1>
-    <br>
-    <div class="Hola">
-      <p class="animate"> Katherine Sorvylenny Flores Marín </p>
-    </div>
-    <br>
-    <div class="Texto">
-      <p class="P-Desarrollador">Desarrollador Frontend</p>
-    </div>
-    
-    <div class="photo-imagen">
-      <img [src]="'assets/photoKathe.jpg'" class="Photo" alt="Foto de Kathe" />
-    </div>
 
-    <div class="br-sepa"></div>
+<div class="container">
+  <h1 class="parrafo">Mi Portafolio</h1>
+  <br>
+  <div class="name">
+    <p class="animate"> Katherine Sorvylenny Flores Marín </p>
+  </div>
+  <br>
+  <div class="photo-imagen">
+    <img [src]="'assets/photoKathe.jpg'" class="Photo" alt="Foto de Kathe" />
+  </div>
+</div>
+<div class="icon">
+  <div class="social-links" *ngFor="let item of list_Icon">
+    <a [href]="item.link" target="_blank"
+      (click)="item.link && abrirEnNuevaPagina(item.link)">
+      <div id="item.text1 && text2 && text3" class="social-btn flex-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          [class]="item.text1"
+          viewBox="0 0 16 16">
+          <path [attr.d]="item.text2"></path>
+          <path [attr.d]="item.text3"></path>
+        </svg>
+        <span>{{item.title}}</span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="br-sepa"></div>
+<div class="sobreMi">
+  <div class="informacion">
+    <div class="papper" draggable="true">
+      <h5 class="Texto">Sobre mi</h5>
+      <p class="parrafo-sobre">
+        Soy tecnológico (a) en Informática con experiencia de 1 año y 8 meses como técnico IT en una editorial de medios visuales. Me especializo en el desarrollo frontend con Angular, TypeScript, CSS, HTML y JavaScript. Actualmente, estoy ampliando mis habilidades a C#, Express y SQL Server.
+
+        Además, he trabajado como analista de bases de datos en Excel, digitalizando datos para proyectos futuros. Fuera del trabajo, disfruto de la música, el baile, viajar, cantar,  ver películas y series."
+      </p>
+    </div>
+  </div>
+</div>
+
+<h5 class="texto_experiences">experiencias</h5>
+<div class="experiences">
+  <div class="laboral">
+    <div class="papper" draggable="true" style="margin-top: 10px" *ngFor="let item of list_Experiencias">
+      <div>
+        <span class="text-span">{{ item.text1 }}</span>/
+        <span class="text-span">{{ item.text2 }}</span>
+        <p class="parrafo-sobre">{{ item.text3 }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<h5 class="texto_experiences">proyectos<h5>
+<div class="proyect">
+    <div *ngFor="let item of list_Proyectos">
+      <div class="card-proyect" style="margin-top: 10px">
+        <div class="video-container">
+          <video width="100%" height="auto" controls>
+            <source [src]="item.video" type="video/mp4">
+          </video>
+        </div>
+        <br/>
+        <div class="card-body">
+          <h5 class="card-title">{{ item.text1 }}</h5>
+          <p class="card-text">
+            {{ item.text2 }}<strong> {{ item.text3 }}</strong>
+          </p>
+          <a [href]="item.link" target="_blank" class="btn btn-primary">Ver App</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--   <div class="br-sepa"></div>
     <div class="P-Logo">
         <div class="d-flex flex-row container-sing" *ngFor="let item of list_Icon">
         <a [href]="item.link"  target="_blank" (click)="item.link && abrirEnNuevaPagina(item.link)">
@@ -78,7 +142,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="Tecnologias">
           <div class="card" style="margin-top: 10px">
             <h5 class="Texto">{{ list_Tecnologias[0].title }}</h5>
@@ -91,7 +155,7 @@
             </div>
           </div>
         </div>
-    
+
         <div class="P-Logo">
           <div class="card" style="margin-top: 10px">
             <h5 class="Texto">Contacto</h5>
@@ -123,6 +187,4 @@
         </div>
       </div>
     </div>
-    
-  </div>
-  
+ -->
