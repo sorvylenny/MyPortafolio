@@ -7,7 +7,7 @@ html, body {
 }
 .parrafo{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif, serif';
     font-weight: 800;
     font-size: 2.5rem;
     line-height: 1.5;
@@ -18,7 +18,7 @@ html, body {
 .Contenedor-text {
     text-align: center;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif, serif';
     color:#060606;
     margin-top:10px;
     margin-bottom: 10px;
@@ -29,7 +29,7 @@ html, body {
 
 .Texto{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif, serif';
     font-weight: 900;
     font-size: 2rem;
     line-height: 1.5;
@@ -46,7 +46,7 @@ html, body {
 .name{
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif, serif';
     font-weight: 800;
     place-items: center;
     height: 5vh;
@@ -150,6 +150,7 @@ html, body {
   font-size: 2rem;
   text-transform: capitalize;
   color: black;
+  font-weight: 700;
 }
 .buttons {
     margin-right: 20px;
@@ -215,20 +216,20 @@ h6{
 
 .parrafo-sobre {
     text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-family: 'PT Serif, serif';
+    font-weight: 500;
+    font-size: 1.3rem;
     line-height: 1.5;
 }
 .text-span{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif, serif';
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     display: inline-block;
 }
 .card {
-    width: 30rem;
+    width: 650px;
     background-color: rgba(255, 247, 247, 0.672);
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -272,6 +273,10 @@ h6{
 }
 .card-text{
     text-align: justify;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 500;
+
 }
 
 .image-container {
@@ -320,7 +325,7 @@ h6{
   cursor: pointer;
   height: 50px;
   width: 50px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'PT Serif, serif';
   color: #333;
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
@@ -388,8 +393,8 @@ h6{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: "PT Serif", serif;
-  width: 550px;
+  font-family: 'PT Serif, serif';
+  width: 650px;
   height: auto;
   border-radius: 25px;
   cursor: pointer;
@@ -397,3 +402,15 @@ h6{
   border: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
+.card-title{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+.button-separator {
+  margin-right: 10px;
+}
+

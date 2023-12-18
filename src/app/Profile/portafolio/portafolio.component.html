@@ -56,10 +56,24 @@
     </div>
   </div>
 </div>
+
+<div class="Tecnologias">
+  <div class="card" style="margin-top: 10px">
+    <h5 class="Texto">{{ list_Tecnologias[0].title }}</h5>
+    <div class="card-tecnology">
+      <div class="d-flex justify-content-between">
+        <ng-container *ngFor="let item of list_Tecnologias.slice(1)">
+          <img [src]="item.link" class="card-img-top" alt="..." />
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
 <h5 class="texto_experiences">proyectos<h5>
 <div class="proyect">
     <div *ngFor="let item of list_Proyectos">
-      <div class="card-proyect" style="margin-top: 10px">
+      <div class="card-proyect">
         <div class="video-container">
           <video width="100%" height="auto" controls>
             <source [src]="item.video" type="video/mp4">
@@ -72,11 +86,16 @@
             {{ item.text2 }}<strong> {{ item.text3 }}</strong>
           </p>
           <a [href]="item.link" target="_blank" class="btn btn-primary">Ver App</a>
+          <ng-container *ngIf="item.text1 === 'Proyecto Store'">
+            <span class="button-separator"></span>
+            <a href="https://eleazargamezd.github.io/portfolio/" target="_blank" class="btn btn-secondary">Portafolio Eleazar</a>
+          </ng-container>
         </div>
       </div>
   </div>
 </div>
 
+<app-footer></app-footer>
 <!--   <div class="br-sepa"></div>
     <div class="P-Logo">
         <div class="d-flex flex-row container-sing" *ngFor="let item of list_Icon">
