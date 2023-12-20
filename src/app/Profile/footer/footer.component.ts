@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Portafolio } from '../interface';
 
 @Component({
@@ -6,7 +6,12 @@ import { Portafolio } from '../interface';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
+  currentYear!: number;
+
+  ngOnInit(): void {
+    this.currentYear = new Date().getFullYear();
+  }
   bubbleArray = Array.from({ length: 128 });
 
   list_Icon: Portafolio[]=[
@@ -21,4 +26,6 @@ export class FooterComponent {
   getBubbleStyles(): string {
     return `--size:${2 + Math.random() * 4}rem; --distance:${6 + Math.random() * 4}rem; --position:${-5 + Math.random() * 110}%; --time:${2 + Math.random() * 2}s; --delay:${-1 * (2 + Math.random() * 2)}s;`;
   }
+
+
 }

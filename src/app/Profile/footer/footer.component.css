@@ -247,3 +247,40 @@
   background-color:  #53b7f5;
   border: 1px solid #53b7f5;
 }
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  body {
+    /* Ajustes para el cuerpo (body) en pantallas de 375px a 768px */
+    font-size: 14px; /* Ejemplo: ajusta el tamaño de fuente */
+  }
+
+  .footer {
+    /* Ajustes para el pie de página en pantallas de 375px a 768px */
+    padding: 1rem; /* Ejemplo: añade relleno al pie de página */
+  }
+
+  .footer .content {
+    /* Ajustes para el contenido del pie de página en pantallas de 375px a 768px */
+    grid-template-columns: 1fr; /* Ejemplo: ajusta el diseño de columnas */
+  }
+
+  .Texto {
+    /* Ajustes para el texto con clase "Texto" en pantallas de 375px a 768px */
+    font-size: 1.5rem; /* Ejemplo: ajusta el tamaño de fuente */
+  }
+
+  .card-body {
+    /* Ajustes para elementos con clase "card-body" en pantallas de 375px a 768px */
+    text-align: left; /* Ejemplo: ajusta la alineación del texto */
+  }
+
+  .container-Conct {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .buttons {
+    /* Ajustes para elementos con clase "buttons" en pantallas de 375px a 768px */
+    margin-top: 10px; /* Ejemplo: añade margen superior */
+  }
+}

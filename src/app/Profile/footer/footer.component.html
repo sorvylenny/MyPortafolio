@@ -7,33 +7,31 @@
     </div>
     <div class="content">
       <div>
-        <div>
-             <div class="card-body">
-                <div class="container-Conct">
-                  <div class="d-flex flex-row" *ngFor="let item of list_Icon.slice(0,4)">
-                    <a [href]="item.link" target="_blank">
-                      <button class="btn btn-primary buttons">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          fill="currentColor"
-                          [class]="item.text1"
-                          viewBox="0 0 16 16">
-                          <path [attr.d]="item.text2"></path>
-                          <path [attr.d]="item.text3"></path>
-                        </svg>
-                      </button>
-                    </a>
+          <div class="card-body">
+            <div class="container-Conct">
+              <div class="d-flex flex-row"
+                *ngFor="let item of list_Icon.slice(0,3)">
+                <a [href]="item.link" target="_blank">
+                  <button class="btn btn-primary buttons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      [class]="item.text1"
+                      viewBox="0 0 16 16">
+                      <path [attr.d]="item.text2"></path>
+                      <path [attr.d]="item.text3"></path>
+                    </svg>
+                  </button>
+                </a>
               </div>
             </div>
-          </div>
         </div>
         <div>
-          <h6 style="color: white;"> © 2023 Copyright: Realizado por Katherine Flores</h6>
-        <!-- ... other content ... -->
-      </div>
-        <!-- ... other content ... -->
+          <h6 style="color: white;"> © {{currentYear}} Copyright: Realizado por
+            Katherine Flores</h6>
+        </div>
       </div>
     </div>
   </div>
@@ -41,9 +39,10 @@
 <svg style="position: absolute; top: 100vh">
   <defs>
     <filter id="blob">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
-      <feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
+      <fegaussianblur in="SourceGraphic" stdDeviation="10" result="blur"></fegaussianblur>
+      <fecolormatrix in="blur" mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></fecolormatrix>
+      <fecomposite in="SourceGraphic" in2="blob" operator="atop"></fecomposite>
     </filter>
   </defs>
 </svg>

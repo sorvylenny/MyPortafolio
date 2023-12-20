@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './Profile/footer/footer.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
