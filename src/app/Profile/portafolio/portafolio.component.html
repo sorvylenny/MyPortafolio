@@ -76,7 +76,7 @@
 </div>
 
 <h5 class="texto_experiences">proyectos<h5>
-<div class="proyect">
+  <div class="proyect">
     <div *ngFor="let item of list_Proyectos">
       <div class="card-proyect">
         <div class="video-container">
@@ -91,15 +91,20 @@
             {{ item.text2 }}<strong> {{ item.text3 }}</strong>
           </p>
           <div>
-            <a [href]="item.link" target="_blank" class="btn btn-primary">Ver App</a>
+            <ng-container *ngIf="item.text1 === 'System Sales' || item.text1 === 'Proyecto Store'">
+              <a [href]="item.link" target="_blank" class="btn btn-primary">Ver Código</a>
+            </ng-container>
+            <ng-container *ngIf="item.text1 !== 'System Sales' && item.text1 !== 'Proyecto Store'">
+              <a [href]="item.link" target="_blank" class="btn btn-primary">Ver App</a>
+            </ng-container>
             <ng-container *ngIf="item.text1 === 'Proyecto Store'">
               <span class="button-separator"></span>
-              <a href="https://eleazargamezd.github.io/portfolio/" target="_blank" class="btn btn-secondary">Portafolio Eleazar</a>
+              <a href="https://eleazargamezd.github.io/portfolio/" target="_blank" class="btn btn-info">Portafolio Eleazar</a>
             </ng-container>
           </div>
         </div>
       </div>
+    </div>
   </div>
-</div>
-
+  
 <app-footer></app-footer>

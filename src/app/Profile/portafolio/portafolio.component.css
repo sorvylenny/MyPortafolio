@@ -37,7 +37,7 @@ html, body {
         width: 0;
     }
     to {
-        width: 55%;
+        width: 95%;
     }
 }
 @keyframes blink {
@@ -59,6 +59,24 @@ html, body {
     }
 
 }
+/* TODO: HACER QUE HAGA LA IMAGEN A UN LADO  Y EL NOMBRE Y DESARROLLADOR AL CENTRO*/
+/* @media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .parrafo {
+    display: none;
+  }
+
+  .name,
+  .desarrollador,
+  .photo-imagen {
+    margin-left: 20px;
+  }
+} */
 
 .Photo{
     width: 200px;
@@ -176,7 +194,8 @@ html, body {
   }
 @media (max-width: 425px){
     .card-img-top{
-        width: 35px;
+        width: 30px;
+        height:30px;
     }
 }
 
@@ -260,7 +279,7 @@ html, body {
   justify-content: space-between;
   font-family: 'PT Serif, serif';
   width: 650px;
-  height: 1000px;
+  height: 1050px;
   border-radius: 25px;
   cursor: pointer;
   background-color: rgba(255, 247, 247, 0.672);
