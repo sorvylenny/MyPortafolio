@@ -1,9 +1,10 @@
 
 <div class="container">
-  <h1 class="parrafo">Mi Portafolio</h1>
   <br>
   <div class="name">
-    <p class="animate"> Katherine Sorvylenny Flores Marín </p>
+    <span class="animate">
+     <h5 class="texto_experiences"> Katherine Flores</h5>
+    </span>
   </div>
   <br>
   <div class="desarrollador">
@@ -19,7 +20,7 @@
   <div class="social-links" *ngFor="let item of list_Icon">
     <a [href]="item.link" target="_blank"
       (click)="item.link && abrirEnNuevaPagina(item.link)">
-      <div id="item.text1 && text2 && text3" class="social-btn flex-center">
+      <div id="{{item.text1}}{{item.text2}}{{item.text3}}" class="social-btn flex-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -43,7 +44,7 @@
       <p class="parrafo-sobre">
         Soy tecnológico (a) en Informática con experiencia de 1 año y 8 meses como técnico IT en una editorial de medios visuales. Me especializo en el desarrollo frontend con Angular, TypeScript, CSS, HTML y JavaScript. Actualmente, estoy ampliando mis habilidades a C#, Express y SQL Server.
 
-        Además, he trabajado como analista de bases de datos en Excel, digitalizando datos para proyectos futuros. Fuera del trabajo, disfruto de la música, el baile, viajar, cantar,  ver películas y series."
+        Además, he trabajado como analista de bases de datos en Excel, digitalizando datos para proyectos futuros. Fuera del trabajo, disfruto de la música, el baile, viajar, cantar,  ver películas y series.
       </p>
     </div>
   </div>
@@ -106,5 +107,5 @@
       </div>
     </div>
   </div>
-  
+
 <app-footer></app-footer>

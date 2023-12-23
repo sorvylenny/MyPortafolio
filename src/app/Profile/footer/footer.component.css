@@ -1,19 +1,18 @@
 .footer {
-  z-index: 1;
   --footer-background: #53b7f5;
   display: grid;
   position: relative;
   grid-area: footer;
   width: 100%;
+
 }
 
 .footer .bubbles {
   position: absolute;
-  top: 0;
+  top: auto;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1.2rem;
   background: var(--footer-background);
   filter: url("#blob");
 }
@@ -24,7 +23,7 @@
   border-radius: 100%;
   animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
       bubble-move var(--time, 2s) ease-in infinite var(--delay, 0s);
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 0%);
 }
 
 .footer .content {
@@ -49,6 +48,7 @@
 .footer h6 {
   margin: 0;
   font-size: 1rem;
+  font-family: 'Courgette', cursive;
 }
 
 .footer > div {
@@ -79,7 +79,7 @@
 
 @keyframes bubble-move {
   0% {
-      bottom: -4rem;
+      bottom: 0;
   }
   100% {
       bottom: var(--distance, 20rem);
@@ -114,4 +114,4 @@
   .footer .content {
     grid-template-columns: 1fr auto;
   }
-} 
+}
