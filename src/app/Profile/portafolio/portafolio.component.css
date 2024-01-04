@@ -5,25 +5,15 @@
 
 html, body {
     height: 100%;
-    margin: 0;
+    margin: 10px 20px 10px 20px;
     overflow: hidden;
 }
-.parrafo{
-    text-align: center;
-    font-family: 'PT Serif, serif';
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 1.5;
-    color: rgb(3, 3, 3);
-}
-
 .name{
     display: flex;
     justify-content: center;
     font-family: 'Great Vibes', cursive;
     font-weight: 700;
     font-size: 3.5rem;
-    place-items: center;
     text-align: center;
     color: rgb(3, 3, 3);
 }
@@ -50,20 +40,17 @@ html, body {
     }
 }
 @media (max-width: 767px) {
-    .name {
-        font-size: 1.5rem;
+    .texto_experiences {
+      font-weight: 500;
+      font-size: 2.5rem !important;
     }
 
     .animate {
-        font-size: 1.4rem;
+        font-size: 2.2rem !important;
         width: 100%;
-    }
-    .parrafo{
-      font-size: 1.5rem;
     }
 
 }
-
 .Photo{
     width: 200px;
     height: auto;
@@ -81,6 +68,9 @@ html, body {
     .Photo{
         width: 150px;
     }
+    .texto_experiences{
+      font-size: 2rem;
+    }
 }
 
 .br-sepa{
@@ -95,10 +85,6 @@ html, body {
         text-align: center;
     }
 }
-.icon{
-    display: flex;
-    justify-content: center;
-}
 .Texto{
   text-align: center;
   font-family: 'Satisfy', cursive;
@@ -108,29 +94,11 @@ html, body {
   color: #060606;
   text-shadow: 4px 4px 4px rgba(107, 103, 103, 0.5);
 }
-.parrafo-sobre {
-  text-align: justify;
-  font-family: 'Courgette', cursive;
-  font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
 
 .sobreMi{
   display: flex;
   justify-content: center
 
-}
-.experiences{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.laboral{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .texto_experiences{
   display: flex;
@@ -146,34 +114,28 @@ html, body {
   font-size: 3.5rem;
   text-shadow: 4px 4px 4px rgba(252, 251, 251, 0.5);
 }
-
-.text-span{
-  font-family: 'Satisfy', cursive;
-    font-weight: 800;
-    font-size: 1.5rem;
-    text-align: center;
-    display: inline-block;
+.parrafo-sobre {
+  text-align: justify;
+  font-family: 'Courgette', cursive;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 10px 10px;
 }
 .card {
-    width: 650px;
+    width: 550px;
     background-color: rgba(255, 247, 247, 0.672);
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 425px){
-    .card{
-        width: 450px;
-    }
-}
-
 .card-body {
     text-align: center;
 }
 
 .card-img-top {
-   width: 45px;
-   height: 40px;
-
+   width: 35px;
+   height: 35px;
+   margin: 6px;
 }
 .card-img-top:hover {
     transition-duration: 5ms;
@@ -181,13 +143,42 @@ html, body {
     transform: scale(1.2);
 
   }
-@media (max-width: 425px){
-    .card-img-top{
-        width: 30px;
-        height:30px;
-    }
+.card-tecnology{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 10px;
 }
+@media (max-width: 767px) {
+  .card {
+    width: auto;
+    margin-top: 10px;
+  }
 
+  .Texto {
+    font-size: 1.5rem;
+  }
+
+  .card-img-top {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .card{
+    width: auto;
+    margin-top: 10px;
+  }
+  .card-img-top{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+  }
+  .card-tecnology{
+   flex-wrap: wrap;
+  }
+}
 .Tecnologias{
     display: flex;
     justify-content: center;
@@ -198,6 +189,12 @@ html, body {
     line-height: 1.5;
     font-size: 1.2rem;
     font-weight: 500;
+    margin: 10px 10px;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
 }
 
 .social-links,.flex-center {
@@ -244,16 +241,83 @@ html, body {
   padding: 2px;
   width: 110px;
 }
+@media (max-width: 768px) {
+  .social-btn {
+    height: 40px;
+    width: 60px;
+    font-size: 0.8rem;
+  }
 
+  .social-btn svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .social-btn {
+    height: 30px;
+    width: 50px;
+    font-size: 0.7rem;
+  }
+
+  .social-btn svg {
+    height: 15px;
+    width: 15px;
+  }
+  .social-btn:hover {
+    width: 105px;
+    border-radius: 5px;
+  }
+}
+.experiences{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.laboral{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.text-span{
+  font-family: 'Satisfy', cursive;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+}
 .papper {
   position: relative;
   box-sizing: border-box;
-  width: 650px;
+  width: 550px;
   height: auto;
   background: #ffffff;
   background-image: linear-gradient(#ffffff 1.1rem, #ccc 1.2rem);
   background-size: 100% 1.2rem;
   border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .parrafo-sobre {
+    font-size: 1rem;
+  }
+
+  .experiences {
+    justify-content: center;
+  }
+
+  .laboral {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-span {
+    font-size: 1.2rem;
+  }
+
+  .papper {
+    width: 100%;
+  }
 }
 
 .proyect{
@@ -268,37 +332,40 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'PT Serif, serif';
-  width: 650px;
-  height: 1050px;
+  font-family: 'Courgette', cursive;
+  width: 550px;
+  height: 1040px;
+  margin: 15px 10px;
   border-radius: 25px;
   cursor: pointer;
   background-color: rgba(255, 247, 247, 0.672);
   border: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(107, 103, 103, 0.5);
 }
 .card-title{
   text-align: center;
   font-size: 35px;
   font-weight: bold;
   font-family: 'Satisfy', cursive;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   color: rgb(0, 0, 0);
   text-shadow: 4px 4px 4px rgba(107, 103, 103, 0.5);
 }
 .button-separator {
   margin-right: 10px;
 }
+.button{
+
+}
 
 @media(max-width:767px)  {
 
-  .card-proyect{
-    width: 400px;
+  .card-title{
+    font-size: 25px;
   }
   .card-text{
     line-height: 1.0;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .social-btn{
     font-size: 0.8rem;
@@ -316,6 +383,38 @@ html, body {
     align-items: center;
     justify-content: center;
     width: 400px;
+    height: auto;
+  }
+}
+@media(max-width:480px)  {
+
+  .card-proyect{
+    width: 300px;
+  }
+  .card-text{
+    line-height: 1.0;
+    font-size: 0.9rem;
+  }
+  .social-btn{
+    font-size: 0.5rem;
+  }
+  .social-btn svg{
+    width: 20px;
+    height: 20px;
+  }
+  .papper{
+    width: 300px;
+    height: auto;
+  }
+  .card-proyect{
+    flex-direction: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+  }
+  ng-container{
+    width: 200px;
     height: auto;
   }
 }

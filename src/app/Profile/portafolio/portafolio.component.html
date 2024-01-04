@@ -85,7 +85,6 @@
             <source [src]="item.video" type="video/mp4">
           </video>
         </div>
-        <br/>
         <div class="card-body">
           <h5 class="card-title">{{ item.text1 }}</h5>
           <p class="card-text">
@@ -93,7 +92,7 @@
           </p>
           <div>
             <ng-container *ngIf="item.text1 === 'System Sales' || item.text1 === 'Proyecto Store'">
-              <a [href]="item.link" target="_blank" class="btn btn-primary">Ver Código</a>
+              <a [href]="item.link" target="_blank" class="btn btn-primary button">Ver Código</a>
             </ng-container>
             <ng-container *ngIf="item.text1 !== 'System Sales' && item.text1 !== 'Proyecto Store'">
               <a [href]="item.link" target="_blank" class="btn btn-primary">Ver App</a>
